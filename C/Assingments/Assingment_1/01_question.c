@@ -1,3 +1,5 @@
+// Write a program to check whether a number is even or odd.
+
 #include <stdio.h>
 
 int main() {
@@ -13,5 +15,6 @@ else
 printf("Odd number");
 
 return 0;
+
 
 }
