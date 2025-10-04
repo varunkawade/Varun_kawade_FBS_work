@@ -1,3 +1,5 @@
+// WAP to check if the year is leap or not.
+
 #include <stdio.h>
 
 int main() {
@@ -13,5 +15,6 @@ else
 printf("%d is NOT a Leap Year\n", year);
 
 return 0;
+
 
 }
