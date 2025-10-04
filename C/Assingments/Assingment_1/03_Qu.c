@@ -1,3 +1,5 @@
+// Write a program to check whether a given year is a leap year.
+
 #include<stdio.h>
 
 int main(){
@@ -9,4 +11,5 @@ int main(){
 		printf("Not Leap year");
 	}
     return 0;
+
 }
