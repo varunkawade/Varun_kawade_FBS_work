@@ -1,3 +1,5 @@
+// Convert the time entered in hh,min and sec into total seconds.
+
 #include<stdio.h>
 
 int main(){
@@ -7,4 +9,5 @@ int main(){
     printf("time = %d:%d:%d\n", hr,min,sec);
     printf("toatal_seconds = %d\n", total_seconds);
     return 0;
+
 }
