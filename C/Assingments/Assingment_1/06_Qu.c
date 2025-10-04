@@ -1,3 +1,5 @@
+// Write a program to check whether a given character is uppercase or lowercase.
+
 #include<stdio.h>
 
 int main(){
@@ -9,4 +11,5 @@ int main(){
 		printf("Lowercase");
 	}
     return 0;
+
 }
