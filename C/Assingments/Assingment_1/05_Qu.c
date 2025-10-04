@@ -1,3 +1,5 @@
+// Write a program to check whether a person is eligible to vote (age ≥ 18).
+
 #include<stdio.h>
 
 int main(){
@@ -9,4 +11,5 @@ int main(){
 		printf("Not Eligible for vote");
 	}
     return 0;
+
 }
