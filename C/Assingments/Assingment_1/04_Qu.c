@@ -1,3 +1,5 @@
+// Write a program to check whether a given character is a vowel or consonant.
+
 #include<stdio.h>
 
 int main(){
@@ -10,4 +12,5 @@ int main(){
 		printf("The char is consonant");
 	}
     return 0;
+
 }
