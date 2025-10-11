@@ -6,11 +6,11 @@
 
 int main() {
 
-int num = 223410; // hardcoded value
+int num = 223410; 
 
 int last_two;
 
-last_two = num % 100; // Get last 2 digits
+last_two = num % 100;
 
 printf("Number = %d\n", num);
 
