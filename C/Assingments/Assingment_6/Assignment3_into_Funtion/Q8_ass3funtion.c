@@ -1,23 +1,28 @@
-
 #include<stdio.h>
 
-void sumDigits(int no);
+void sumDigits();   
 
 void main()
 {
-	int no;
-	printf("Enter number\n");
-	scanf("%d",&no);
-	
-	sumDigits(no);
+    sumDigits();  
 }
 
-void sumDigits(int no)
+void sumDigits()    
 {
-	int sum , ld ;
-	
-	ld = no%10;
-	no = no/10000;
-	sum = ld+no;
-	printf("%d",sum);
+    int no, first, last, sum;
+
+    printf("Enter number: ");
+    scanf("%d", &no);
+
+    last = no % 10;           
+
+    while(no >= 10)          
+    {
+        no = no / 10;
+    }
+    first = no;
+
+    sum = first + last;
+
+    printf("Sum of first and last digit = %d", sum);
 }
