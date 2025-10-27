@@ -1,23 +1,23 @@
 #include<stdio.h>
-void findSum(int no);
+
+void findSum();   
 
 void main()
 {
-	int no;
-    printf("enter no \n");
-	scanf("%d",&no);
-	
-	findSum(no);
+    findSum();    
 }
 
-void findSum(int no)
+void findSum()  
 {
-	int sum=0;
-	
-	for(int i=1; i<=no; i++)
-	{
-		sum= sum+i;
-	}
-	
-	printf("The sum is %d", sum);
+    int no, sum = 0;
+
+    printf("Enter number: ");
+    scanf("%d", &no);
+
+    for(int i = 1; i <= no; i++)
+    {
+        sum = sum + i;
+    }
+
+    printf("The sum is %d", sum);
 }
