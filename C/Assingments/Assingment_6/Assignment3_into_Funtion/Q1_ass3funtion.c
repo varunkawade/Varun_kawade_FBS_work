@@ -1,13 +1,12 @@
 #include<stdio.h>
 
-void armstrong();   // function declaration
-
+void armstrong();   
 void main()
 {
-    armstrong();    // function call
+    armstrong();    
 }
 
-void armstrong()    // function definition
+void armstrong()    
 {
     int no, sum = 0, rem, temp;
 
@@ -27,3 +26,4 @@ void armstrong()    // function definition
     else
         printf("Not Armstrong number");
 }
+
