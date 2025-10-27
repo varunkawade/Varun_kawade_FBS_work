@@ -1,31 +1,29 @@
-// perfect no
-
 #include<stdio.h>
 
-void perfectNo(int no);
+void perfectNo();  
 
 void main()
 {
-	int no;
-	printf("Enter no\n");
-	scanf("%d",&no);
-	
-	perfectNo(no);
+    perfectNo();    
 }
 
-void perfectNo(int no)
+void perfectNo()    
 {
-	int sum=0, temp=no;
-	
-	for(int i=1; i<=no/2; i++)
-	{
-		if(no%i==0)
-			sum=sum+i;
-	}
-	
-	if(temp==sum)
-		printf("perfect no");
-	else
-	    printf("not perfect");
-	
+    int no, sum = 0, temp;
+
+    printf("Enter number: ");
+    scanf("%d", &no);
+
+    temp = no;
+
+    for(int i = 1; i <= no / 2; i++)
+    {
+        if(no % i == 0)
+            sum = sum + i;
+    }
+
+    if(temp == sum)
+        printf("Perfect number");
+    else
+        printf("Not perfect");
 }
