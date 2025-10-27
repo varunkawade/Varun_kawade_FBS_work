@@ -1,30 +1,30 @@
 #include<stdio.h>
 
-void primeNot(int no);
+void primeNot();  
 
 void main()
 {
-	int no;
-	printf("Enter no\n");
-	scanf("%d", &no);
-	primeNot(no);
+    primeNot();    
 }
 
-void primeNot(int no)
+void primeNot()    
 {
-	int flag=0;
-	
-	for(int i=2; i<=no/2; i++)
-	{
-		if(no%i==0)
-		{
-			flag=1;
-			break;
-		}
-	}
-	
-	if(flag==1)
-	printf("Not Prime");
-	else
-	printf("Prime");
+    int no, flag = 0;
+
+    printf("Enter number: ");
+    scanf("%d", &no);
+
+    for(int i = 2; i <= no / 2; i++)
+    {
+        if(no % i == 0)
+        {
+            flag = 1;
+            break;
+        }
+    }
+
+    if(flag == 1)
+        printf("Not Prime");
+    else
+        printf("Prime");
 }
