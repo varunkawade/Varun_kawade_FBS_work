@@ -1,0 +1,25 @@
+package p2;
+
+import java.util.TreeSet;
+
+public class demo{
+	public static void main1(String[] args) {
+		TreeSet<Integer> t1 = new TreeSet<Integer>();
+		t1.add(10);
+		t1.add(30);
+		t1.add(20);
+		System.out.println(t1);
+		 for(int i = 0; i < t1.size(); i++) {
+	            //System.out.println(t1.get(i));
+	        }
+		 for(Integer i:t1) {
+	        	System.out.println(i);
+	        }
+		 if(t1.contains(20)) {
+	        	System.out.println("Found");
+	        }
+	        else {
+	        	System.out.println("Not found");
+	        }
+	}
+}
