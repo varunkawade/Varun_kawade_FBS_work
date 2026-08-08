@@ -1,0 +1,103 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         version="6.0">
+
+
+<filter>
+    <filter-name>filter1</filter-name>
+    <filter-class>com.myservlet.ServiceFilter</filter-class>
+</filter>
+
+<filter-mapping>
+    <filter-name>filter1</filter-name>
+    <url-pattern>/Login</url-pattern>
+</filter-mapping>
+
+
+
+  <context-param>
+    <param-name>driver</param-name>
+    <param-value>com.mysql.cj.jdbc.Driver</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>url</param-name>
+    <param-value>jdbc:mysql://localhost:3306/varundb</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>username</param-name>
+    <param-value>root</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>password</param-name>
+    <param-value>Varun@123</param-value>
+  </context-param>
+  
+  <servlet>
+  
+    <servlet-name>log</servlet-name>
+    <servlet-class>com.myservlet.LoginServlet</servlet-class>
+   
+    <init-param>
+    <param-name>company</param-name>
+    <param-value>infosys</param-value>
+    
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>log</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <servlet-class>com.myservlet.RegistrationServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <url-pattern>/Register</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+  <servlet-name>SignupPage</servlet-name>
+  <servlet-class>com.myservlet.SignupPage</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>SignupPage</servlet-name>
+  <url-pattern>/signup</url-pattern>
+</servlet-mapping> 
+  
+  <servlet>
+  <servlet-name>CartEntryServlet</servlet-name>
+  <servlet-class>com.myservlet.CartEntryServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>CartEntryServlet</servlet-name>
+  <url-pattern>/cart</url-pattern>
+</servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>BillingServlet</servlet-name>
+  <servlet-class>com.myservlet.BillingServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>BillingServlet</servlet-name>
+  <url-pattern>/billing</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+    <servlet-name>servlet2</servlet-name>
+   <servlet-class>com.myservlet.Myservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servlet2</servlet-name>
+    <url-pattern>/s2</url-pattern>
+  </servlet-mapping>
+
+</web-app>
